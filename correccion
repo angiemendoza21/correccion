@@ -1,0 +1,88 @@
+Funcion  pregunta_2
+	definir n,i, j como entero
+	n = 5
+	para i <- 1 hasta n
+		para j <- 1 hasta i 
+			escribir "*" Sin Saltar
+		Finpara
+		escribir ""
+	fin para
+fin funcion 
+Funcion pregunta_3
+	Definir a, b, x Como Entero
+    a = 3
+    b = 6
+    x = a + a * (a + b) - b * a + (trunc(b/3) - 2 + a * (a mod 2))
+	Escribir x
+FinFuncion
+
+Funcion pregunta_4 
+	Definir n,m,r Como Entero
+	n=15;m=25;r=1
+	Mientras (r<>0) Hacer
+		r=m mod n
+		si(r=0) Entonces
+			Escribir "m=",m,"n=",n
+		SiNo
+			n=m
+			m=r
+			Escribir "Esto vale N ;" n
+			Escribir "Esto vale M ;" m
+		FinSi
+	FinMientras
+FinFuncion
+
+Funcion pregunta_5
+	
+FinFuncion
+
+Funcion pregunta_6
+	Definir nombre Como Cadena
+	Definir edad Como Entero
+	Definir pulsaciones Como Real
+	Mostrar "Ingrese su nombre:"
+	Leer nombre
+	Mostrar "Ingrese su edad en años:"
+	Leer edad
+	Si edad < 10 Entonces
+		pulsaciones <- (200 - edad) / 10
+	Sino Si edad < 18 Entonces
+			pulsaciones <- (220 - edad) / 15
+		Sino
+			pulsaciones <- (200 - edad) / 20
+		FinSi
+		Mostrar "Nombre: ", nombre
+		Mostrar "Edad: ", edad
+		Mostrar "Pulsaciones por segundo: ", pulsaciones
+	FinSi
+FinFuncion
+Funcion pregunta_7
+		Definir cont1, suma, num, i, numero Como entero
+		cont1 =0
+		suma =  0 
+		Escribir "digite la cantidad de numeros"
+		leer num 
+		para i desde 1 Hasta num Hacer
+			Escribir "ingrese el numero " i 
+			leer numero 
+			si numero % 2 == 0 y numero % 5 == 0
+				cont1 = cont1 +1
+			FinSi
+			si numero >0 y numero %3 == 0
+				suma = suma + numero
+			FinSi
+		FinPara
+		Escribir "la cantidad de multiplos de 2 y 5 es : " cont1 
+		Escribir "la suma de los multiplos de 3 es : " suma 
+FinFuncion
+
+Algoritmo ejercicio
+	//pregunta_2()
+	//pregunta_3()
+	//pregunta_4()
+	//pregunta_5()
+	//pregunta_6()
+	//pregunta_7()
+	
+FinAlgoritmo
+
